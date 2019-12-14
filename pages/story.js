@@ -13,7 +13,6 @@ class Story extends React.Component {
         } catch (err) {
             console.log(err);
             story = null;
-
         }
 
         return { story };

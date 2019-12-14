@@ -1,0 +1,21 @@
+{
+    "name": "Hacker Next",
+    "short_name": "hackr-next",
+    "lang": "en-US",
+    "start_url": "/",
+    "display": "standalone",
+    "theme_color": "#f60",
+    "icons": [
+        {
+            "src": "/static/icons/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "/static/icons/icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+    ],
+    "_comment": "This file allows this app to be added to the homesceen, by making it a PWA. This app then behaves as it's native app for the device and instructs teh browser on the user's device as how to open the app, in addtion to adding some more styling options like icons, bg color.....etc"
+}

@@ -10,8 +10,8 @@ const Layout = ({ children, title, description }) => {
             </Head>
             <div className="container">
                 <nav>
-                    <Link>
-                        <a href="">
+                    <Link href="/">
+                        <a>
                             <span className="main-title">
                                 Hacker Next
                         </span>

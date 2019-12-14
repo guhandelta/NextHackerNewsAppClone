@@ -1,0 +1,1 @@
+{"ast":null,"code":"import moduleName from './StoryList';","map":{"version":3,"sources":["I:/Projects/nextHackerNewsApp/components/index.js"],"names":["moduleName"],"mappings":"AAAA,OAAOA,UAAP,MAAuB,aAAvB","sourcesContent":["import moduleName from './StoryList'"]},"metadata":{},"sourceType":"module"}

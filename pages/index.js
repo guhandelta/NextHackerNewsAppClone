@@ -1,8 +1,7 @@
 // React library will not be required to be imported, when working with Next.js
 import fetch from 'isomorphic-fetch'
 import Error from 'next/error'
-
-import { StoryList } from '../components/StoryList'
+import { Layout, StoryList } from '../components'
 
 class index extends React.Component {
 
@@ -29,15 +28,10 @@ class index extends React.Component {
             return <Error statusCode={503} />
         }
 
-        return (
-            <div className="">
-                <h1>Hacker Rank Clone</h1>
-                {
-                    stories.map(story => (
-                        <h3 key={story.id}>{story.title}</h3>
-                    ))
-                }
-            </div>
+        return ( 
+            <Layout title="Hacker Next" description="A Hacker News clone made with Next.js">
+                <StoryList stories={stories} />
+            </Layout>
         );
     }
 }

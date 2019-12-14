@@ -28,6 +28,20 @@ class index extends React.Component {
         return { page, stories };
     }
 
+    // Registering the Service Worker here, as this page is the most visited page
+    componentDidMount() { // Since the service worker only exist in the browser, it can be registered using a lifecycle hook
+        // Checking if the usage of service worker is allowed, by checking to see if the navigator obj holds the serviceWorker property
+        if ("serviceWorker" in navigator) { // This check is done, as some old browsers don't support this facility
+            navigator.serviceWorker
+                .register('/service-worker.js') //This is a promise
+                .then(registeration => {
+                    console.log('ServiceWorker registeration successful', registeration);
+                }).catch(err => {
+                    console.warn('ServiceWorker registeration failed', err.message);
+                })
+        }
+    }
+
     render() {
         const { page, stories } = this.props;
 

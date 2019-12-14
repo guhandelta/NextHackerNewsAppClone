@@ -6,6 +6,7 @@ import { Layout, StoryList } from '../components'
 
 class index extends React.Component {
 
+    // getInitialProps() can als provide the inof about the server setup(if any such)
     static async getInitialProps({ req, res, query }) {//destructurizing the context object => req/res from erver, query param from url
         //query => can be used to dynamically change the endpoint, that's currently being accessed, based on the page that was requested
 
